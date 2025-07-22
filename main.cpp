@@ -10,6 +10,9 @@ public :
     int getZegop(int a) {
 		return a * a;
 	}
+	int getSumSum(int a, int b, int c) {
+		return a + b + c;
+	}
 };
 
 TEST(t1, t2) {
