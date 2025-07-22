@@ -21,13 +21,18 @@ TEST(t1, t2) {
 	EXPECT_EQ(1, 1);
 }
 
+TEST(SquareTest, GetSquare) {
+	Cal cal;
+	int num = 3;
+	EXPECT_EQ(num * num, cal.getZegop(num));
+}
+
 TEST(TS, GETSUMSUMTC1) {
 	Cal cal;
 	int result = 0;
 	result = cal.getSumSum(1, 2, 3);
 	EXPECT_EQ(6, result);
 }
-
 
 int main() {
 	::testing::InitGoogleMock();
