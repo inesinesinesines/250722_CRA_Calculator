@@ -64,7 +64,6 @@ TEST(ts, minustest) {
 	EXPECT_EQ(1, result);
 }
 
-
 int main() {
 	::testing::InitGoogleMock();
 	return RUN_ALL_TESTS();
