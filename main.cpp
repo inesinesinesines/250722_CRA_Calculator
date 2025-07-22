@@ -58,7 +58,11 @@ TEST(TS, GETSUMSUMTC1) {
 	EXPECT_EQ(6, result);
 }
 
-
+TEST(ts, minustest) {
+	Cal cal;
+	int result = cal.getMinus(2, 1);
+	EXPECT_EQ(1, result);
+}
 
 int main() {
 	::testing::InitGoogleMock();
