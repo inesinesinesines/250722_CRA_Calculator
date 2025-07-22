@@ -21,6 +21,14 @@ TEST(t1, t2) {
 	EXPECT_EQ(1, 1);
 }
 
+TEST(TS, GETSUMSUMTC1) {
+	Cal cal;
+	int result = 0;
+	result = cal.getSumSum(1, 2, 3);
+	EXPECT_EQ(6, result);
+}
+
+
 int main() {
 	::testing::InitGoogleMock();
 	return RUN_ALL_TESTS();
