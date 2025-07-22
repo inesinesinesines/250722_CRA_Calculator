@@ -3,6 +3,9 @@
 class Cal {
 public : 
 	// 이곳에 코드 작성 
+	int getZegop(int a) {
+		return a * a;
+	}
 };
 
 TEST(t1, t2) {
