@@ -2,13 +2,16 @@
 
 class Cal {
 public :
+	int getGop(int a, int b) {
+		return a * b;
+	}
+
 	int getSum(int a, int b) 
 	{
 		return a + b;
 	}
 
-	int getMinus(int a, int b)
-	{ 
+	int getMinus(int a, int b) { 
 		return a - b;
 	}
 
@@ -16,17 +19,30 @@ public :
 		if (b == 0) return 0;
 		return (a / b);
 	}
+
     int getZegop(int a) {
 		return a * a;
 	}
+
 	int getSumSum(int a, int b, int c) {
 		return a + b + c;
 	}
 };
 
+TEST(TC, SumTest) {
+	Cal cal;
+	int ret = cal.getSum(10, 20);
+	EXPECT_EQ(30, ret);
+}
 
 TEST(t1, t2) {
 	EXPECT_EQ(1, 1);
+}
+
+TEST(t1, getDivideTest) {
+	Cal cal;
+	int ret = cal.getDivide(1000, 10);
+	EXPECT_EQ(ret, 1000/10);
 }
 
 TEST(SquareTest, GetSquare) {
@@ -47,6 +63,7 @@ TEST(ts, minustest) {
 	int result = cal.getMinus(2, 1);
 	EXPECT_EQ(1, result);
 }
+
 
 int main() {
 	::testing::InitGoogleMock();
