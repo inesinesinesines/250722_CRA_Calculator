@@ -2,8 +2,11 @@
 
 class Cal {
 public : 
-	// �̰��� �ڵ� �ۼ� 
+	// ÀÌ°÷¿¡ ÄÚµå ÀÛ¼º 
 	int getMinus(int a, int b) { return a - b; }
+	int getZegop(int a) {
+		return a * a;
+	}
 };
 
 TEST(t1, t2) {
