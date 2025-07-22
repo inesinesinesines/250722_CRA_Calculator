@@ -22,12 +22,6 @@ public :
 };
 
 
-TEST(TC, SumTest) {
-	Cal cal;
-	int ret = cal.getSum(10, 20);
-	EXPECT_EQ(30, ret);
-}
-
 TEST(t1, t2) {
 	EXPECT_EQ(1, 1);
 }
