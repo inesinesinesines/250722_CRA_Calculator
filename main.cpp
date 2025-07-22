@@ -3,12 +3,17 @@
 class Cal {
 public : 
 	// ÀÌ°÷¿¡ ÄÚµå ÀÛ¼º 
+	int getMinus(int a, int b) { return a - b; }
+	int getZegop(int a) {
 	int getDivide(int a, int b) {
 		if (b == 0) return 0;
 		return (a / b);
   }
     int getZegop(int a) {
 		return a * a;
+	}
+	int getSumSum(int a, int b, int c) {
+		return a + b + c;
 	}
 };
 
@@ -20,6 +25,13 @@ TEST(SquareTest, GetSquare) {
 	Cal cal;
 	int num = 3;
 	EXPECT_EQ(num * num, cal.getZegop(num));
+}
+
+TEST(TS, GETSUMSUMTC1) {
+	Cal cal;
+	int result = 0;
+	result = cal.getSumSum(1, 2, 3);
+	EXPECT_EQ(6, result);
 }
 
 int main() {
