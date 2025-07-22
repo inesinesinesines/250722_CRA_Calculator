@@ -5,6 +5,11 @@ public :
 	// ÀÌ°÷¿¡ ÄÚµå ÀÛ¼º 
 	int getMinus(int a, int b) { return a - b; }
 	int getZegop(int a) {
+	int getDivide(int a, int b) {
+		if (b == 0) return 0;
+		return (a / b);
+  }
+    int getZegop(int a) {
 		return a * a;
 	}
 };
