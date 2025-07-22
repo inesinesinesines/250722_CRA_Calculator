@@ -16,6 +16,12 @@ TEST(t1, t2) {
 	EXPECT_EQ(1, 1);
 }
 
+TEST(SquareTest, GetSquare) {
+	Cal cal;
+	int num = 3;
+	EXPECT_EQ(num * num, cal.getZegop(num));
+}
+
 int main() {
 	::testing::InitGoogleMock();
 	return RUN_ALL_TESTS();
