@@ -2,8 +2,12 @@
 
 class Cal {
 public : 
-	// �̰��� �ڵ� �ۼ� 
-	int getZegop(int a) {
+	// ÀÌ°÷¿¡ ÄÚµå ÀÛ¼º 
+	int getDivide(int a, int b) {
+		if (b == 0) return 0;
+		return (a / b);
+  }
+    int getZegop(int a) {
 		return a * a;
 	}
 };
