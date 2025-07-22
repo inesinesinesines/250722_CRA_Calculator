@@ -3,6 +3,11 @@
 class Cal {
 public : 
 	// 이곳에 코드 작성 
+
+	int getDivide(int a, int b) {
+		if (b == 0) return 0;
+		return (a / b);
+	}
 };
 
 TEST(t1, t2) {
