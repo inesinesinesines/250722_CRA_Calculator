@@ -29,6 +29,12 @@ public :
 	}
 };
 
+TEST(TC, Gop) {
+	Cal cal;
+	int ret = cal.getGop(2, 3);
+	EXPECT_EQ(ret, 6);
+}
+
 TEST(TC, SumTest) {
 	Cal cal;
 	int ret = cal.getSum(10, 20);
