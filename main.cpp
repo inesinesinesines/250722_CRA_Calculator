@@ -3,6 +3,7 @@
 class Cal {
 public : 
 	// 이곳에 코드 작성 
+	int getMinus(int a, int b) { return a - b; }
 };
 
 TEST(t1, t2) {
